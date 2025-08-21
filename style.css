@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    min-width: 100vh;
+    background-color: #5b5b5b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.container h1 {
+    margin: 30px 0 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.container video {
+    width: 400px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin: 0 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .container video {
+        width: calc(100% - 100px);
+    }
+}
