@@ -1,4 +1,5 @@
-const video = document.querySelector('video source');
+const video = document.querySelector('video');
+const source = document.querySelector('source');
 
 function random(){
     let number = Math.floor((Math.random() * 20) + 1);
@@ -6,5 +7,6 @@ function random(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    video.src = `./videos/video-${random()}.mp4`;
+    source.src = `./videos/video-${random()}.mp4`;
+    video.load();
 })
